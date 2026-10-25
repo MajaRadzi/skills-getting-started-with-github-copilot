@@ -58,20 +58,120 @@ section h3 {
 }
 
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  margin-bottom: 16px;
+  padding: 18px;
+  border: 1px solid #e2e7f0;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(26, 35, 126, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.activity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(26, 35, 126, 0.12);
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: #0066cc;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 16px;
+  padding: 13px 14px;
+  border-radius: 8px;
+  background-color: #f3f6fc;
+}
+
+.participants-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 9px;
+}
+
+.participants-heading h5 {
+  color: #1a237e;
+  font-size: 15px;
+}
+
+.participant-count {
+  padding: 3px 9px;
+  border-radius: 999px;
+  background-color: #e0e7ff;
+  color: #283593;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.participant-list {
+  padding: 0;
+  list-style: none;
+  color: #45516a;
+}
+
+.participant-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.participant-email {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.remove-participant {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  border: 1px solid #f1c7cc;
+  border-radius: 7px;
+  background-color: #fff;
+  color: #b42332;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.remove-participant:hover {
+  border-color: #b42332;
+  background-color: #b42332;
+  color: #fff;
+}
+
+.remove-participant:focus-visible {
+  outline: 3px solid #8594ed;
+  outline-offset: 2px;
+}
+
+.remove-participant:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.remove-participant svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.participants-empty {
+  margin-bottom: 0;
+  color: #68758d;
+  font-size: 14px;
+  font-style: italic;
 }
 
 .form-group {
